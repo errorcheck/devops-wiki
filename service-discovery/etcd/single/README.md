@@ -13,4 +13,37 @@ $ vagrant up
 $ vagrant ssh
 ```
 
+## Using CLI
 
+- To set a key/value
+
+```
+$ etcdctl set Service/port 3000
+$ etcdctl set Service/url 192.168.50.30
+```
+
+- To get a value
+
+```
+$ etcdctl get Service/port
+```
+
+- To list all the keys in "Service" Directory
+
+```
+$ etcdctl ls Service
+```
+
+- To delete a key with its value
+
+```
+$ etcdctl rm Service/port
+```
+
+- To delete a directory
+
+```
+$ etcdctl rm Service
+```
+
+## Using API

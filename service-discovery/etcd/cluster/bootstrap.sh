@@ -26,7 +26,7 @@ etcd --name $NODE_NAME --initial-advertise-peer-urls http://$NODE_IP:2380 \
 wget -qO- https://get.docker.com/ | sh
 
 docker run -d --name registrator \
-    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /var/run/docker.sock:/tmp/docker.sock \
     -h $NODE_NAME \
     gliderlabs/registrator \
     -ip $NODE_IP etcd://$NODE_IP:2379

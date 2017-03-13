@@ -1,5 +1,8 @@
 # DevOps Wiki
 
+<div align="center">
+<img src="https://devops.com/wp-content/uploads/2016/02/images.jpeg">
+</div>
 
 - <a href="service-discovery/README.md">Service Discovery</a>
 - <a href="registrator/README.md">Service Registrator</a>

@@ -4,11 +4,13 @@
 <img src="https://devops.com/wp-content/uploads/2016/02/images.jpeg">
 </div>
 
- ## Table of Contents
+## Table of Contents
  
 - <a href="service-discovery/README.md">Service Discovery</a>
-	- <a href="service-discovery/registrator/README.md">Service Registrator</a>
+	- <a href="service-discovery/registrator/README.me">registrator</a>
 	- <a href="service-discovery/confd/README.md">confd</a>
+	- <a href="service-discovery/etcd/README.md">etcd</a>
+        - <a href="service-discovery/consul/README.md">consul</a>
 - Continuous Integration
     - Jenkins
     - Travis CI

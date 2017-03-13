@@ -1,0 +1,4 @@
+- directories: 
+   - /data/consul/ui
+   - /data/consul/config
+   - /data/consul/data

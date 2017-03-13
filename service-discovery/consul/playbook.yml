@@ -1,5 +1,19 @@
 ---
 - name: Configure consul agent
   remote_user: vagrant
+  vars_file:
+    - variables.yml
   tasks:
-    - name: Copy bin
+    - name: Copy consul bin to /usr/local/bin
+      copy:
+        src: "bin/consul"
+	dest: "/usr/local/bin/consul"
+      tags: [consul]
+
+    - name: Create consul directory
+      file:
+        path: "{{ item }}"
+	state: directory
+      with_items: directories
+      tags: [consul]
+	

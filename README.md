@@ -15,3 +15,4 @@
     - AWS
     - Google Cloud Engine
     - DigitalOcean
+- <a href="chatops/README.md">ChatOps</a>

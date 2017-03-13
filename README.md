@@ -5,14 +5,22 @@
 - <a href="registrator/README.md">Service Registrator</a>
 - <a href="confd/README.md">confd</a>
 - Continuous Integration
+    - Jenkins
+    - Travis CI
 - Continuous Delivery
 - Configuration Management Tools
-- Control Version Systems
-- Orchestration Engine
-- Deployement
-    - Docker
-    - Virtualbox
-    - AWS
-    - Google Cloud Engine
-    - DigitalOcean
+    - Ansible
+    - Puppet
+- Reserve Proxy
+	- Nginx
+	- HAProxy
+- Blue/Green Deployment
+- Canary Updates
+- Scalability
+- Clustering
+- Orchestration Engine:
+	- Swarm Mode
+	- Kuberentes
+- Self-Healing Systems
+- Centralized Logging & Monitoring
 - <a href="chatops/README.md">ChatOps</a>

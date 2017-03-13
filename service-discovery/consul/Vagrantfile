@@ -1,0 +1,18 @@
+Vagrant.configure('2') do |config|
+  (1..3).each do |i|
+    node = "node-consul#{i}"
+    ip = "192.168.50.1#{i}"
+    config.vm.define node do |c|
+       c.vm.box = 'ubuntu/trusty64'
+       c.vm.hostname = node
+       c.vm.provider 'virtualbox' do |vb|
+          vb.name = node
+	  vb.cpus = 2
+	  vb.memory = 1024
+	  vb.gui = false
+       end
+       c.vm.network 'private_network', ip: ip
+       c.vm.provision 'shell', path: 'bootstrap.sh'
+    end
+  end
+end

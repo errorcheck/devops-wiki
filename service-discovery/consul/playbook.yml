@@ -1,0 +1,5 @@
+---
+- name: Configure consul agent
+  remote_user: vagrant
+  tasks:
+    - name: Copy bin

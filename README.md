@@ -10,7 +10,10 @@
 	- <a href="service-discovery/registrator/README.me">registrator</a>
 	- <a href="service-discovery/confd/README.md">confd</a>
 	- <a href="service-discovery/etcd/README.md">etcd</a>
-        - <a href="service-discovery/consul/README.md">consul</a>
+	- <a href="service-discovery/consul/README.md">consul</a>
+- <a href="deployment/README.md">Deployment</a>
+	- <a href="deployment/docker/README.md">Docker</a>
+	- <a href="deployment/rocket/README.md">Rocket</a>
 - Continuous Integration
     - Jenkins
     - Travis CI

@@ -1,19 +1,37 @@
 ---
 - name: Configure consul agent
+  hosts: hosts
   remote_user: vagrant
-  vars_file:
+  sudo: yes
+  vars_files:
     - variables.yml
   tasks:
     - name: Copy consul bin to /usr/local/bin
       copy:
-        src: "bin/consul"
-	dest: "/usr/local/bin/consul"
+        src: bin/consul
+        dest: /usr/local/bin/consul
+        mode: 0755
       tags: [consul]
 
     - name: Create consul directory
       file:
         path: "{{ item }}"
-	state: directory
-      with_items: directories
+        state: directory
+      with_items:
+         - "{{ directories }}"
       tags: [consul]
-	
+
+    - name: Start consul agent
+      shell: "nohup consul agent\
+              -data-dir /data/consul/data \
+              -config-dir /data/consul/config \
+              -node={{ ansible_hostname }} \
+              -bind={{ ansible_eth1.ipv4.address }} \
+              -client=0.0.0.0 \
+              > /tmp/consul.log 2>&1 &"
+      tags: [consul]
+
+    - name: Join consul cluster
+      shell: consul join {{ consul_server_ip }}
+      when: consul_server_ip is defined
+      tags: [consul]

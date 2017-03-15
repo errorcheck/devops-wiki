@@ -4,6 +4,17 @@
 <img src="https://devops.com/wp-content/uploads/2016/02/images.jpeg">
 </div>
 
+## DevOps Toolkit
+
+- Configuration management and provisioning
+- Immutable deployments
+- Service Discovery
+- Dynamic proxies
+- Zero downtime continuous deployment
+- Cluster managment
+- Self-healing
+- Centralised monitoring and logging
+
 ## Table of Contents
  
 - <a href="service-discovery/README.md">Service Discovery</a>

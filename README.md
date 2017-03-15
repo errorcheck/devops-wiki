@@ -32,7 +32,7 @@
 - Configuration Management Tools
     - Ansible
     - Puppet
-- Reserve Proxy
+- <a href="proxy-service/README.md">Proxy Service</a>
 	- Nginx
 	- HAProxy
 - Blue/Green Deployment

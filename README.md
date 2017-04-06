@@ -16,7 +16,7 @@
 - Centralised monitoring and logging
 
 ## Table of Contents
- 
+
 - <a href="service-discovery/README.md">Service Discovery</a>
 	- <a href="service-discovery/registrator/README.me">registrator</a>
 	- <a href="service-discovery/confd/README.md">confd</a>
@@ -35,6 +35,7 @@
 - <a href="proxy-service/README.md">Proxy Service</a>
 	- Nginx
 	- HAProxy
+  - <a href="proxy-service/kong/README.md">Kong</a>
 - Blue/Green Deployment
 - Canary Updates
 - Scalability
